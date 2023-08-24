@@ -11,25 +11,7 @@
       class="p-6 bg-primaryLight rounded-lg border border-primaryDark shadow"
     >
       <div v-if="mode === 'sign-in'" class="flex flex-col space-y-2">
-        <HoppSmartItem
-          :loading="signingInWithGitHub"
-          :icon="IconGithub"
-          :label="`Continue with GitHub`"
-          class="!items-center"
-          @click="signInWithGithub"
-        />
-        <HoppSmartItem
-          :loading="signingInWithGoogle"
-          :icon="IconGoogle"
-          :label="`Continue with Google`"
-          @click="signInWithGoogle"
-        />
-        <HoppSmartItem
-          :loading="signingInWithMicrosoft"
-          :icon="IconMicrosoft"
-          :label="`Continue with Microsoft`"
-          @click="signInWithMicrosoft"
-        />
+       
         <HoppSmartItem
           :icon="IconEmail"
           :label="`Continue with Email`"

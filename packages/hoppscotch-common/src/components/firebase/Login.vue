@@ -8,28 +8,12 @@
   >
     <template #body>
       <div v-if="mode === 'sign-in'" class="flex flex-col space-y-2">
-        <HoppSmartItem
-          :loading="signingInWithGitHub"
-          :icon="IconGithub"
-          :label="`${t('auth.continue_with_github')}`"
-          @click="signInWithGithub"
-        />
+        
         <HoppSmartItem
           :loading="signingInWithGoogle"
           :icon="IconGoogle"
           :label="`${t('auth.continue_with_google')}`"
           @click="signInWithGoogle"
-        />
-        <HoppSmartItem
-          :loading="signingInWithMicrosoft"
-          :icon="IconMicrosoft"
-          :label="`${t('auth.continue_with_microsoft')}`"
-          @click="signInWithMicrosoft"
-        />
-        <HoppSmartItem
-          :icon="IconEmail"
-          :label="`${t('auth.continue_with_email')}`"
-          @click="mode = 'email'"
         />
       </div>
       <form
