@@ -205,9 +205,9 @@ const nativeShare = () => {
   if (navigator.share) {
     navigator
       .share({
-        title: "Hoppscotch",
-        text: "Hoppscotch • Open source API development ecosystem - Helps you create requests faster, saving precious time on development.",
-        url: "https://hoppscotch.io",
+        title: "Betaflux Postman",
+        text: "Betaflux Postman • Open source API development ecosystem",
+        url: "https://betaflux.co",
       })
       .catch(console.error)
   } else {
