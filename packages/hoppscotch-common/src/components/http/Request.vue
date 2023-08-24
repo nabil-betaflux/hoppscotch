@@ -471,8 +471,8 @@ const copyShareLink = (shareLink: string) => {
     const time = new Date().toLocaleTimeString()
     const date = new Date().toLocaleDateString()
     navigator.share({
-      title: "Hoppscotch",
-      text: `Hoppscotch • Open source API development ecosystem at ${time} on ${date}`,
+      title: "Betaflux postman",
+      text: `Betaflux postman - Helps you create requests faster, saving precious time on development. ${time} on ${date}`,
       url: link,
     })
   } else {
