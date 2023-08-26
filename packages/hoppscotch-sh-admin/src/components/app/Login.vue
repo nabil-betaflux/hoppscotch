@@ -11,12 +11,14 @@
       class="p-6 bg-primaryLight rounded-lg border border-primaryDark shadow"
     >
       <div v-if="mode === 'sign-in'" class="flex flex-col space-y-2">
-       
+        
         <HoppSmartItem
-          :icon="IconEmail"
-          :label="`Continue with Email`"
-          @click="mode = 'email'"
+          :loading="signingInWithGoogle"
+          :icon="IconGoogle"
+          :label="`Continue with Google`"
+          @click="signInWithGoogle"
         />
+       
       </div>
       <form
         v-if="mode === 'email'"
