@@ -17,7 +17,7 @@ export class RESTRequest {
     RESTReqSchemaVersion
   )
   public name$ = new BehaviorSubject("Untitled")
-  public endpoint$ = new BehaviorSubject("https://echo.hoppscotch.io/")
+  public endpoint$ = new BehaviorSubject("")
   public params$ = new BehaviorSubject<HoppRESTParam[]>([])
   public headers$ = new BehaviorSubject<HoppRESTHeader[]>([])
   public method$ = new BehaviorSubject("GET")
