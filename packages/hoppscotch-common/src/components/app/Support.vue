@@ -36,14 +36,7 @@
           blank
           @click="hideModal()"
         />
-        <HoppSmartItem
-          :icon="IconMessageCircle"
-          :label="t('app.chat_with_us')"
-          :description="t('support.chat')"
-          :info-icon="IconChevronRight"
-          active
-          @click="chatWithUs()"
-        />
+       
         <HoppSmartItem
           :icon="IconGitHub"
           :label="t('app.github')"
@@ -83,13 +76,11 @@
 import IconTwitter from "~icons/brands/twitter"
 import IconDiscord from "~icons/brands/discord"
 import IconGitHub from "~icons/lucide/github"
-import IconMessageCircle from "~icons/lucide/message-circle"
 import IconGift from "~icons/lucide/gift"
 import IconZap from "~icons/lucide/zap"
 import IconBook from "~icons/lucide/book"
 import IconChevronRight from "~icons/lucide/chevron-right"
 import { invokeAction } from "@helpers/actions"
-import { showChat } from "@modules/crisp"
 import { useI18n } from "@composables/i18n"
 
 const t = useI18n()
@@ -102,10 +93,7 @@ const emit = defineEmits<{
   (e: "hide-modal"): void
 }>()
 
-const chatWithUs = () => {
-  showChat()
-  hideModal()
-}
+
 
 const showShortcuts = () => {
   invokeAction("flyouts.keybinds.toggle")

@@ -55,15 +55,7 @@
               @keyup.c="chat!.$el.click()"
               @keyup.escape="hide()"
             >
-              <HoppSmartItem
-                ref="documentation"
-                :icon="IconBook"
-                :label="`${t('app.documentation')}`"
-                to="https://docs.hoppscotch.io"
-                blank
-                :shortcut="['D']"
-                @click="hide()"
-              />
+             
               <HoppSmartItem
                 ref="shortcuts"
                 :icon="IconZap"
@@ -76,64 +68,10 @@
                   }
                 "
               />
-              <HoppSmartItem
-                ref="chat"
-                :icon="IconMessageCircle"
-                :label="`${t('app.chat_with_us')}`"
-                :shortcut="['C']"
-                @click="
-                  () => {
-                    chatWithUs()
-                    hide()
-                  }
-                "
-              />
-              <HoppSmartItem
-                :icon="IconGift"
-                :label="`${t('app.whats_new')}`"
-                to="https://docs.hoppscotch.io/documentation/changelog"
-                blank
-                @click="hide()"
-              />
-              <HoppSmartItem
-                :icon="IconActivity"
-                :label="t('app.status')"
-                to="https://status.hoppscotch.io"
-                blank
-                @click="hide()"
-              />
-              <hr />
-              <HoppSmartItem
-                :icon="IconGithub"
-                :label="`${t('app.github')}`"
-                to="https://github.com/hoppscotch/hoppscotch"
-                blank
-                @click="hide()"
-              />
-              <HoppSmartItem
-                :icon="IconTwitter"
-                :label="`${t('app.twitter')}`"
-                to="https://hoppscotch.io/twitter"
-                blank
-                @click="hide()"
-              />
-              <HoppSmartItem
-                :icon="IconUserPlus"
-                :label="`${t('app.invite')}`"
-                @click="
-                  () => {
-                    invokeAction('modals.share.toggle')
-                    hide()
-                  }
-                "
-              />
-              <HoppSmartItem
-                :icon="IconLock"
-                :label="`${t('app.terms_and_privacy')}`"
-                to="https://docs.hoppscotch.io/support/privacy"
-                blank
-                @click="hide()"
-              />
+             
+              
+              
+              
               <div
                 class="flex px-4 py-2 opacity-50"
                 @dblclick="
@@ -262,9 +200,7 @@ const nativeShare = () => {
   }
 }
 
-const chatWithUs = () => {
-  showChat()
-}
+
 
 const showDeveloperOptionModal = () => {
   if (currentUser.value) {

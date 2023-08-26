@@ -25,10 +25,10 @@ export class MailerService {
   ): string {
     switch (mailDesc.template) {
       case 'team-invitation':
-        return `${mailDesc.variables.invitee} invited you to join ${mailDesc.variables.invite_team_name} in Hoppscotch`;
+        return `${mailDesc.variables.invitee} invited you to join ${mailDesc.variables.invite_team_name} in Betaflux Postman`;
 
       case 'code-your-own':
-        return 'Sign in to Hoppscotch';
+        return 'Sign in to Betaflux Postman';
     }
   }
 

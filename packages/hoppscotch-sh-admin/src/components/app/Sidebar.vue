@@ -19,7 +19,7 @@
               <img src="/cover.png" alt="hoppscotch-logo" class="h-7" />
 
               <span v-if="isExpanded" class="font-semibold text-accentContrast"
-                >HOPPSCOTCH</span
+                >BTF POSTMAN</span
               >
             </HoppSmartLink>
           </div>
