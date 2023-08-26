@@ -11,7 +11,10 @@ export const APP_INFO = {
     background: "#181818",
     lightThemeColor: "#ffffff",
     darkThemeColor: "#181818",
-  }
+  },
+  social: {
+    twitter: "@hoppscotch_io",
+  },
 } as const
 
 export const META_TAGS = (env: Record<string, string>): IHTMLTag[] => [
