@@ -165,7 +165,7 @@
               </div>
             </div>
           </section>
-          <section>
+          <!-- <section>
             <h4 class="font-semibold text-secondaryDark">
               {{ t("settings.proxy") }}
             </h4>
@@ -216,7 +216,7 @@
                 @click="resetProxy"
               />
             </div>
-          </section>
+          </section> -->
         </div>
       </div>
     </div>
